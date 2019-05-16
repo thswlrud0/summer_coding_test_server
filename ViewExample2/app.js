@@ -9,15 +9,15 @@
  
 
 // Express 기본 모듈 불러오기
-var express = require('express')
-  , http = require('http')
-  , path = require('path');
+var express = require('express');
+var http = require('http');
+var path = require('path');
 
 // Express의 미들웨어 불러오기
-var bodyParser = require('body-parser')
-  , cookieParser = require('cookie-parser')
-  , static = require('serve-static')
-  , errorHandler = require('errorhandler');
+var bodyParser = require('body-parser');
+var cookieParser = require('cookie-parser');
+var static = require('serve-static');
+var errorHandler = require('errorhandler');
 
 // 에러 핸들러 모듈 사용
 var expressErrorHandler = require('express-error-handler');
