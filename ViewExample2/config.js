@@ -14,7 +14,7 @@
 */
 module.exports = {
 	server_port: 3000,
-	db_url: 'mongodb://13.125.64.40:27017/local',
+	db_url: 'mongodb://13.125.64.40:27017/shopping',
 	db_schemas: [
 	    {file:'./user_schema', collection:'user2', schemaName:'UserSchema', modelName:'UserModel'}
 	],
