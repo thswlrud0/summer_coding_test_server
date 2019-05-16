@@ -1,4 +1,4 @@
-+/*
+/*
  * ejs 뷰 템플릿 적용하기
  * 
  * 뷰 템플릿을 만들고 응답 웹문서를 템플릿으로부터 생성
@@ -9,8 +9,8 @@
  
 
 // Express 기본 모듈 불러오기
-var express = require('express');
-var http = require('http');
+var express               = require('express');
+var path                  = require('path');
 var path = require('path');
 
 // Express의 미들웨어 불러오기
