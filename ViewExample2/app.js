@@ -51,6 +51,7 @@ console.log('뷰 엔진이 pug로 설정되었습니다.');
 //===== 서버 변수 설정 및 static으로 public 폴더 설정  =====//
 console.log('config.server_port : %d', config.server_port);
 app.set('port', process.env.PORT || 3000);
+app.set('host', '127.0.0.1');
  
 
 // body-parser를 이용해 application/x-www-form-urlencoded 파싱
@@ -114,7 +115,7 @@ app.on('close', function () {
 });
 
 // 시작된 서버 객체를 리턴받도록 합니다. 
-var server = http.createServer(app).listen(app.get('port'), function(){
+var server = http.createServer(app).listen(app.get('port'),app.get('host'), function(){
 	console.log('서버가 시작되었습니다. 포트 : ' + app.get('port'));
 
 	// 데이터베이스 초기화
